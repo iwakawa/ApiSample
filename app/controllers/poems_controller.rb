@@ -5,7 +5,7 @@ class PoemsController < ApplicationController
   end
 
   def show
-    @poem = Poem.all
+    @poem = Poem.find(poem.id)
     render json: @poem
   end
 end
